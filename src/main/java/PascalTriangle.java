@@ -13,9 +13,13 @@ public  class PascalTriangle {
     private static int pascalAtPosition(int row, int pos) {
         int result = 1;
 
+        if ((pos == 1) || (pos == row)) {
+            result = 1;
+        } else {
+            result = pascalAtPosition(row - 1, pos - 1) + pascalAtPosition(row - 1, pos);
+        }
 
         return result;
-
     }
 
 }

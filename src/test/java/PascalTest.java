@@ -57,4 +57,9 @@ public class PascalTest {
         assertEquals(pascalTriangle.NumberAtPosition(3,2), 2);
     }
 
+    @Test
+    public void PositionFourTwo() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(4,2), 3);
+    }
 }
