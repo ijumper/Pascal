@@ -34,4 +34,27 @@ public class PascalTest {
         assertEquals(pascalTriangle.NumberAtPosition(1,3), 1);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void PositionNegativeOnethrowsException() {
+        assertEquals(pascalTriangle.NumberAtPosition(-1,3), 1);
+    }
+
+    @Test
+    public void PositionThreeOne() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(3,1), 1);
+    }
+
+    @Test
+    public void PositionThreeThree() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(3,3), 1);
+    }
+
+    @Test
+    public void PositionThreeTwo() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(3,2), 2);
+    }
+
 }
