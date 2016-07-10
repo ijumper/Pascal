@@ -62,4 +62,16 @@ public class PascalTest {
 
         assertEquals(pascalTriangle.NumberAtPosition(4,2), 3);
     }
+
+    @Test
+    public void PositionFourThree() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(4,3), 3);
+    }
+
+    @Test
+    public void PositionFourFour() {
+
+        assertEquals(pascalTriangle.NumberAtPosition(4,4), 1);
+    }
 }
